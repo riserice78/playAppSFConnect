@@ -3,8 +3,8 @@
 # ~~~~
 
 # Home page
-GET     /login                  controllers.Application.login()
-POST    /                       controllers.Application.index()
+GET     /	                    controllers.Application.login()
+POST    /index                  controllers.Application.index()
 GET     /index2                 controllers.Application.index2()
 POST	/searchAccount			controllers.Account.searchAccount()
 GET		/accounts			    controllers.Account.getAccounts()

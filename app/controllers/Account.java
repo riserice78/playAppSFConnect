@@ -46,9 +46,9 @@ public class Account extends Controller{
 					SObject acc = sObjList[i];
 					AccountModel am = new AccountModel();
 					am.id = acc.getId();
-					am.name = ""+acc.getField("Name");
-					am.billingCity = ""+acc.getField("BillingCity");
-					am.billingState = ""+acc.getField("BillingState");
+					am.name = ""+acc.getField("Name");					
+					am.billingCity = (String) (acc.getField("BillingCity")!=null ? acc.getField("BillingCity") : "");
+					am.billingState = (String) (acc.getField("BillingState")!=null ? acc.getField("BillingState") : "");
 					System.out.println("adding to array : " + am.id + " " + am.name + " of " + am.billingCity + ", " + am.billingState);
 					amList.add(am);
 				  }
