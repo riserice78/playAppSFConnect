@@ -1,3 +1,15 @@
 body {
 	margin-top: 50px;
 }
+.loginPage .inputField{
+	margin-left: 10px;
+}
+.loginPage td.loginButton{
+	text-align: right;
+}
+.index .results ul.resultList li{
+	list-style: none;
+}
+.index .results span{
+	font-weight: bold;
+}

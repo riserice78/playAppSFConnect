@@ -1,0 +1,30 @@
+@(message: String)
+@implicitFieldConstructor = {helper.FieldConstructor(twitterBootstrapInput.render)}
+
+@main("Login to playAppSFConnect") {    
+    <div class="navbar navbar-fixed-top">    
+	<div class="navbar-inner">
+	   <div class="container-fluid">
+		<span class="brand" >@message</span>
+	   </div>
+	</div>
+    </div>
+
+    <div class="container loginPage">
+		@helper.form(action = routes.Application.index(), 'class -> "well form-horizontal"){
+			<table>
+				<tr><td>Username: </td>
+					<td><input class="inputField" type='text' name='uname' value="" /></td>
+				</tr>
+				<tr><td>Password: </td>
+					<td><input class="inputField" type='password' name='pword' value="" /></td>
+				</tr>
+				<tr>
+					<td colspan="2" class="loginButton"><input type="submit" class="btn btn-primary" /></td>
+		  		</tr>
+			</table>
+
+	   	}
+
+    </div>
+}
